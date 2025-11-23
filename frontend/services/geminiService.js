@@ -13,7 +13,7 @@ export const generateTravelItinerary = async (
     if (apiKey === 'demo-key') {
       // Return a mock response for demo purposes
       return {
-        tripName: "Expedición Ubuntu: África Salvaje",
+        tripName: "Expedición Anasa: África Salvaje",
         estimatedCost: "Desde $8,500",
         days: [
           {

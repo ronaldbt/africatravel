@@ -1,2 +1,18 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://anasaviajes.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_nuxt/
+
+# Allow important pages
+Allow: /
+Allow: /destinos/
+Allow: /experiencias/
+Allow: /blog/
+Allow: /guia-viajero/
+Allow: /contacto/

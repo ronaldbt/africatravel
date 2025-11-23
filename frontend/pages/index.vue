@@ -1,14 +1,14 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-luxury-dark text-gray-200 font-sans selection:bg-luxury-gold selection:text-black">
-    <Navbar />
+  <div>
+    <SchemaMarkup :schema="schema" />
     <main>
-      <Hero />
+      <Hero id="hero" />
       
       <!-- Interactive Map Section -->
-      <InteractiveMap />
+      <InteractiveMap id="destinations" />
 
       <!-- Travel Styles Section -->
-      <TravelStyles />
+      <TravelStyles id="experiences" />
 
       <Destinations />
       
@@ -29,15 +29,48 @@
         </div>
       </div>
 
-      <AIPlanner />
+      <AIPlanner id="ai-planner" />
     </main>
-    <Footer />
-    <WhatsAppButton />
+    <Footer id="about" />
   </div>
 </template>
 
 <script setup>
-// Nuxt 4 auto-importa los componentes, no necesitamos importarlos manualmente
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Anasa Viajes",
+  "description": "Safaris de lujo personalizados, lodges exclusivos y experiencias únicas en África",
+  "url": "https://anasaviajes.com",
+  "logo": "https://anasaviajes.com/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+34-912-345-678",
+    "contactType": "customer service",
+    "email": "concierge@anasaviajes.com",
+    "areaServed": "ES",
+    "availableLanguage": "Spanish"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Madrid",
+    "addressCountry": "ES"
+  },
+  "sameAs": [
+    "https://www.facebook.com/anasaviajes",
+    "https://www.instagram.com/anasaviajes",
+    "https://twitter.com/anasaviajes"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "TouristTrip",
+      "name": "Safari de Lujo en África",
+      "description": "Safaris personalizados de lujo en África"
+    }
+  }
+}
+
 onMounted(() => {
   // Scroll reveal functionality
   const observer = new IntersectionObserver((entries) => {
@@ -59,52 +92,4 @@ onMounted(() => {
   })
 })
 </script>
-
-<style>
-/* Custom styles for Ubuntu Travels */
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #0F1115;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #0F1115;
-}
-::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #C5A059;
-}
-
-/* Scroll Reveal Animations */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 1s cubic-bezier(0.5, 0, 0, 1);
-}
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.reveal-delay-100 {
-  transition-delay: 0.1s;
-}
-.reveal-delay-200 {
-  transition-delay: 0.2s;
-}
-.reveal-delay-300 {
-  transition-delay: 0.3s;
-}
-</style>
 

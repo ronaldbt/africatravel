@@ -46,8 +46,8 @@
     <!-- Floating Elements -->
     <div class="absolute bottom-12 right-12 hidden md:block animate-float">
       <div class="bg-white/5 backdrop-blur-md p-6 border border-white/10 max-w-xs">
-        <p class="text-luxury-gold font-serif italic text-xl mb-2">"El único hombre que envidio es aquel que aún no ha estado en África."</p>
-        <p class="text-gray-400 text-xs tracking-widest uppercase">— Richard Mullin</p>
+        <p class="text-luxury-gold font-serif italic text-xl mb-2">"Cuando has bebido el agua de África, siempre volverás."</p>
+        <p class="text-gray-400 text-xs tracking-widest uppercase">— Proverbio Africano</p>
       </div>
     </div>
 

@@ -1,5 +1,5 @@
 <template>
-  <footer id="contact" class="bg-black text-white py-20 border-t border-white/5">
+  <footer id="about" class="bg-black text-white py-20 border-t border-white/5">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
         
@@ -9,7 +9,8 @@
             <svg class="h-6 w-6 text-luxury-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5L12 16l5-4.5M7 11.5L12 7l5 4.5M7 11.5V3a2 2 0 012-2h6a2 2 0 012 2v8.5M7 21h10a2 2 0 002-2v-2.5" />
             </svg>
-            <span class="font-serif text-xl tracking-widest">UBUNTU</span>
+            <span class="font-serif text-xl tracking-widest">ANASA</span>
+            <span class="text-xs uppercase tracking-widest text-luxury-gold ml-2">Viajes</span>
           </div>
           <p class="text-gray-500 leading-relaxed max-w-md font-light text-sm">
             Creando conexiones profundas entre el viajero exigente y el alma indómita de África. Somos artesanos de experiencias transformadoras.
@@ -20,28 +21,35 @@
         <div>
           <h4 class="text-xs font-bold uppercase tracking-widest mb-8 text-white">Explorar</h4>
           <ul class="space-y-4 text-sm text-gray-500 font-light">
-            <li><a href="#" class="hover:text-luxury-gold transition-colors">Destinos</a></li>
-            <li><a href="#" class="hover:text-luxury-gold transition-colors">Nuestras Villas</a></li>
-            <li><a href="#" class="hover:text-luxury-gold transition-colors">Avionetas Privadas</a></li>
-            <li><a href="#" class="hover:text-luxury-gold transition-colors">Prensa</a></li>
+            <li><NuxtLink to="/destinos" class="hover:text-luxury-gold transition-colors">Destinos</NuxtLink></li>
+            <li><NuxtLink to="/experiencias" class="hover:text-luxury-gold transition-colors">Experiencias</NuxtLink></li>
+            <li><NuxtLink to="/tipo-viaje" class="hover:text-luxury-gold transition-colors">Tipo de Viaje</NuxtLink></li>
+            <li><NuxtLink to="/guia-viajero" class="hover:text-luxury-gold transition-colors">Guía del Viajero</NuxtLink></li>
+            <li><NuxtLink to="/blog" class="hover:text-luxury-gold transition-colors">Blog</NuxtLink></li>
           </ul>
         </div>
 
         <!-- Contact -->
         <div>
-          <h4 class="text-xs font-bold uppercase tracking-widest mb-8 text-white">Oficinas</h4>
+          <h4 class="text-xs font-bold uppercase tracking-widest mb-8 text-white">Contacto</h4>
           <ul class="space-y-4 text-sm text-gray-500 font-light">
+            <li class="text-white font-semibold">Oficinas</li>
             <li>Madrid, España</li>
             <li>Cape Town, Sudáfrica</li>
             <li>Arusha, Tanzania</li>
-            <li class="pt-4 text-luxury-gold">+34 912 345 678</li>
-            <li class="text-white">concierge@ubuntutravels.com</li>
+            <li class="pt-4 text-luxury-gold font-semibold">+34 912 345 678</li>
+            <li class="text-white">concierge@anasaviajes.com</li>
+            <li class="pt-4">
+              <NuxtLink to="/contacto" class="text-luxury-gold hover:text-luxury-gold/80 transition-colors underline">
+                Formulario de contacto
+              </NuxtLink>
+            </li>
           </ul>
         </div>
       </div>
 
       <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
-        <p class="text-gray-600 text-xs uppercase tracking-wider">&copy; Ubuntu Travels {{ new Date().getFullYear() }}</p>
+        <p class="text-gray-600 text-xs uppercase tracking-wider">&copy; Anasa Viajes {{ new Date().getFullYear() }}</p>
         <div class="flex space-x-8">
           <a href="#" class="text-gray-600 hover:text-white transition-colors">
             <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
