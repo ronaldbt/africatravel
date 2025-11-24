@@ -53,6 +53,9 @@ useHead({
   meta: [
     { name: 'description', content: 'Descubre experiencias únicas de safari en África: safaris de lujo, gran migración, big five, safaris fotográficos y más. Experiencias personalizadas y exclusivas.' },
     { name: 'keywords', content: 'experiencias safari áfrica, safari lujo, gran migración, big five, safari fotográfico, safari romántico, trekking gorilas' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://anasaviajes.com/experiencias' }
   ]
 })
 
@@ -61,50 +64,51 @@ const experiencias = [
     slug: 'safari-lujo',
     name: 'Safari de Lujo',
     description: 'Experiencias premium con lodges exclusivos, guías privados y servicios de clase mundial.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?q=80&w=2070&auto=format&fit=crop'
   },
   {
     slug: 'gran-migracion',
     name: 'Gran Migración',
     description: 'Presencia el mayor espectáculo natural del mundo: la migración anual de millones de animales.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop'
   },
   {
     slug: 'big-five',
     name: 'Big Five',
     description: 'Encuentra los cinco grandes: león, leopardo, elefante, búfalo y rinoceronte en su hábitat natural.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?q=80&w=2070&auto=format&fit=crop'
   },
   {
     slug: 'safari-fotografico',
     name: 'Safari Fotográfico',
     description: 'Diseñado para fotógrafos, con vehículos especializados y guías expertos en fotografía de vida silvestre.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1545486332-9e0999c535b2?q=80&w=2070&auto=format&fit=crop'
   },
   {
     slug: 'safari-romantico',
     name: 'Safari Romántico',
     description: 'Experiencias íntimas perfectas para parejas, con cenas privadas bajo las estrellas y lodges románticos.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?q=80&w=2070&auto=format&fit=crop'
   },
   {
     slug: 'safari-familiar',
     name: 'Safari Familiar',
     description: 'Aventuras diseñadas para familias, con actividades educativas y alojamientos familiares.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop'
   },
   {
     slug: 'safari-aventura',
     name: 'Safari Aventura',
     description: 'Para los más intrépidos: safaris a pie, camping bajo las estrellas y experiencias de inmersión total.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?q=80&w=2070&auto=format&fit=crop'
   },
   {
     slug: 'trekking-gorilas',
     name: 'Trekking Gorilas',
     description: 'Encuentros íntimos y transformadores con gorilas de montaña en los volcanes de Ruanda y Uganda.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1564760055775-d63b17a55c44?q=80&w=2070&auto=format&fit=crop'
   }
 ]
 </script>
+
 

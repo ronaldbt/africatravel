@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "destinations": "Destinos",
+    "experiences": "Experiencias",
+    "travel_types": "Tipo de Viaje",
+    "travel_guide": "Guía del Viajero",
+    "blog": "Blog",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto",
+    "ai_designer": "Diseñador IA"
+  },
+  "common": {
+    "read_more": "Leer más",
+    "explore": "Explorar",
+    "discover": "Descubrir",
+    "book_now": "Reservar",
+    "request_quote": "Solicitar Presupuesto",
+    "contact_expert": "Contactar Experto",
+    "design_trip": "Diseñar mi Viaje",
+    "from": "Desde",
+    "duration": "Duración",
+    "price": "Precio",
+    "best_time": "Mejor época",
+    "max_group": "Grupo máximo",
+    "included": "Incluido",
+    "not_included": "No incluido",
+    "days": "días",
+    "nights": "noches",
+    "destinations": "destinos",
+    "person": "persona"
+  },
+  "home": {
+    "hero": {
+      "title": "Safaris de Lujo en África",
+      "subtitle": "Expediciones Premium",
+      "description": "Descubre África con Anasa Viajes. Safaris de lujo personalizados, lodges exclusivos y experiencias únicas.",
+      "cta": "Planificar mi Safari"
+    }
+  },
+  "destinations": {
+    "title": "Destinos en África",
+    "subtitle": "Descubre los destinos más exclusivos de África",
+    "countries": {
+      "south_africa": "Sudáfrica",
+      "kenya": "Kenia", 
+      "tanzania": "Tanzania",
+      "botswana": "Botswana",
+      "namibia": "Namibia",
+      "rwanda": "Ruanda",
+      "madagascar": "Madagascar"
+    }
+  },
+  "experiences": {
+    "title": "Experiencias Únicas",
+    "subtitle": "Cada experiencia está diseñada para crear momentos inolvidables",
+    "types": {
+      "luxury_safari": "Safari de Lujo",
+      "great_migration": "Gran Migración",
+      "big_five": "Big Five",
+      "photo_safari": "Safari Fotográfico",
+      "romantic_safari": "Safari Romántico",
+      "family_safari": "Safari Familiar",
+      "adventure_safari": "Safari Aventura",
+      "gorilla_trekking": "Trekking Gorilas"
+    }
+  },
+  "travel_guide": {
+    "title": "Guía del Viajero",
+    "subtitle": "Todo lo que necesitas saber para planificar tu safari perfecto"
+  },
+  "contact": {
+    "title": "Hablemos de tu Safari",
+    "subtitle": "Estamos aquí para crear la experiencia de safari perfecta para ti",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Email",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje"
+    },
+    "info": {
+      "offices": "Oficinas",
+      "contact_info": "Contacto",
+      "hours": "Horario"
+    }
+  },
+  "footer": {
+    "description": "Especialistas en safaris de lujo en África",
+    "quick_links": "Enlaces rápidos",
+    "follow_us": "Síguenos"
+  }
+}

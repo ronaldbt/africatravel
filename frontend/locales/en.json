@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "experiences": "Experiences", 
+    "travel_types": "Travel Types",
+    "travel_guide": "Travel Guide",
+    "blog": "Blog",
+    "about": "About Us",
+    "contact": "Contact",
+    "ai_designer": "AI Designer"
+  },
+  "common": {
+    "read_more": "Read more",
+    "explore": "Explore",
+    "discover": "Discover",
+    "book_now": "Book Now",
+    "request_quote": "Request Quote",
+    "contact_expert": "Contact Expert",
+    "design_trip": "Design my Trip",
+    "from": "From",
+    "duration": "Duration",
+    "price": "Price",
+    "best_time": "Best time",
+    "max_group": "Max group",
+    "included": "Included",
+    "not_included": "Not included",
+    "days": "days",
+    "nights": "nights",
+    "destinations": "destinations", 
+    "person": "person"
+  },
+  "home": {
+    "hero": {
+      "title": "Luxury African Safaris",
+      "subtitle": "Premium Expeditions",
+      "description": "Discover Africa with Anasa Travel. Personalized luxury safaris, exclusive lodges and unique experiences.",
+      "cta": "Plan my Safari"
+    }
+  },
+  "destinations": {
+    "title": "African Destinations",
+    "subtitle": "Discover Africa's most exclusive destinations",
+    "countries": {
+      "south_africa": "South Africa",
+      "kenya": "Kenya",
+      "tanzania": "Tanzania", 
+      "botswana": "Botswana",
+      "namibia": "Namibia",
+      "rwanda": "Rwanda",
+      "madagascar": "Madagascar"
+    }
+  },
+  "experiences": {
+    "title": "Unique Experiences",
+    "subtitle": "Each experience is designed to create unforgettable moments",
+    "types": {
+      "luxury_safari": "Luxury Safari",
+      "great_migration": "Great Migration",
+      "big_five": "Big Five",
+      "photo_safari": "Photography Safari", 
+      "romantic_safari": "Romantic Safari",
+      "family_safari": "Family Safari",
+      "adventure_safari": "Adventure Safari",
+      "gorilla_trekking": "Gorilla Trekking"
+    }
+  },
+  "travel_guide": {
+    "title": "Travel Guide",
+    "subtitle": "Everything you need to know to plan your perfect safari"
+  },
+  "contact": {
+    "title": "Let's talk about your Safari",
+    "subtitle": "We're here to create the perfect safari experience for you",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone", 
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "info": {
+      "offices": "Offices",
+      "contact_info": "Contact",
+      "hours": "Hours"
+    }
+  },
+  "footer": {
+    "description": "Luxury African safari specialists",
+    "quick_links": "Quick links", 
+    "follow_us": "Follow us"
+  }
+}

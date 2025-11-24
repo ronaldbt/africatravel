@@ -2,10 +2,51 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss'],
+  i18n: {
+    locales: [
+      {
+        code: 'es',
+        iso: 'es-ES',
+        file: 'es.json',
+        name: 'Español'
+      },
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en.json',
+        name: 'English'
+      }
+    ],
+    lazy: true,
+    langDir: 'locales/',
+    defaultLocale: 'es',
+    strategy: 'prefix_except_default', // /es/ (default), /en/
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
+    }
+  },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+      ignore: ['/guia-viajero/vacunas-africa', '/guia-viajero/seguridad-africa', '/guia-viajero/presupuesto-safari']
+    }
+  },
   runtimeConfig: {
     public: {
-      geminiApiKey: process.env.GEMINI_API_KEY || ''
+      geminiApiKey: process.env.GEMINI_API_KEY || '',
+      firebase: {
+        apiKey: process.env.FIREBASE_API_KEY || '',
+        authDomain: process.env.FIREBASE_AUTH_DOMAIN || '',
+        projectId: process.env.FIREBASE_PROJECT_ID || '',
+        storageBucket: process.env.FIREBASE_STORAGE_BUCKET || '',
+        messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID || '',
+        appId: process.env.FIREBASE_APP_ID || '',
+        measurementId: process.env.FIREBASE_MEASUREMENT_ID || ''
+      }
     }
   },
   app: {
@@ -27,6 +68,7 @@ export default defineNuxtConfig({
         { name: 'author', content: 'Anasa Viajes' },
         { name: 'language', content: 'es' },
         { name: 'geo.region', content: 'ES' },
+        { rel: 'canonical', href: 'https://anasaviajes.com/' },
       ],
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },

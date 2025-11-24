@@ -75,7 +75,7 @@ const experiencias = {
     name: 'Safari de Lujo',
     slug: 'safari-lujo',
     description: 'Experiencias premium con lodges exclusivos, guías privados y servicios de clase mundial.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?q=80&w=2070&auto=format&fit=crop',
     price: 'Desde $5,000',
     duration: '7-14 días',
     content: 'Nuestros safaris de lujo están diseñados para los viajeros más exigentes. Cada detalle está cuidadosamente planificado para ofrecer una experiencia inolvidable, desde los lodges más exclusivos hasta los guías más experimentados.',
@@ -93,7 +93,7 @@ const experiencias = {
     name: 'Gran Migración',
     slug: 'gran-migracion',
     description: 'Presencia el mayor espectáculo natural del mundo: la migración anual de millones de animales.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop',
     price: 'Desde $6,500',
     duration: '8-12 días',
     content: 'La Gran Migración es uno de los espectáculos naturales más impresionantes del planeta. Cada año, más de dos millones de animales migran a través del Serengeti y el Masai Mara en busca de pastos frescos.',
@@ -110,7 +110,7 @@ const experiencias = {
     name: 'Big Five',
     slug: 'big-five',
     description: 'Encuentra los cinco grandes: león, leopardo, elefante, búfalo y rinoceronte en su hábitat natural.',
-    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?q=80&w=2070&auto=format&fit=crop',
     price: 'Desde $4,500',
     duration: '7-10 días',
     content: 'El Big Five es el santo grial de los safaris africanos. Nuestros itinerarios están diseñados para maximizar las oportunidades de avistamiento de estos cinco animales icónicos en sus hábitats naturales.',
@@ -121,6 +121,96 @@ const experiencias = {
       'Safaris a pie',
       'Alojamiento en reservas privadas',
       'Garantía de avistamiento'
+    ]
+  },
+  'safari-fotografico': {
+    name: 'Safari Fotográfico',
+    slug: 'safari-fotografico',
+    description: 'Diseñado para fotógrafos, con vehículos especializados y guías expertos en fotografía de vida silvestre.',
+    image: 'https://images.unsplash.com/photo-1545486332-9e0999c535b2?q=80&w=2070&auto=format&fit=crop',
+    price: 'Desde $5,200',
+    duration: '10-14 días',
+    content: 'Nuestros safaris fotográficos están especialmente diseñados para fotógrafos apasionados. Con vehículos adaptados, horarios flexibles y guías expertos en comportamiento animal, capturarás las mejores imágenes de la vida silvestre africana.',
+    includes: [
+      'Vehículos modificados para fotografía',
+      'Guías especializados en fotografía',
+      'Horarios flexibles para la mejor luz',
+      'Equipos de fotografía disponibles',
+      'Talleres de fotografía nocturna',
+      'Acceso a escondites fotográficos',
+      'Edición y procesado de imágenes'
+    ]
+  },
+  'safari-romantico': {
+    name: 'Safari Romántico',
+    slug: 'safari-romantico',
+    description: 'Experiencias íntimas perfectas para parejas, con cenas privadas bajo las estrellas y lodges románticos.',
+    image: 'https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?q=80&w=2070&auto=format&fit=crop',
+    price: 'Desde $6,800',
+    duration: '7-10 días',
+    content: 'Diseñado para celebrar el amor en el escenario más romántico del mundo. Desde cenas privadas bajo las estrellas hasta suites de luna de miel con vistas panorámicas, cada momento está pensado para crear recuerdos únicos.',
+    includes: [
+      'Suites privadas con vistas panorámicas',
+      'Cenas privadas bajo las estrellas',
+      'Safaris privados para dos',
+      'Spa y tratamientos de pareja',
+      'Picnics románticos en la sabana',
+      'Champagne y cenas gourmet',
+      'Fotografía profesional de pareja'
+    ]
+  },
+  'safari-familiar': {
+    name: 'Safari Familiar',
+    slug: 'safari-familiar',
+    description: 'Aventuras diseñadas para familias, con actividades educativas y alojamientos familiares.',
+    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop',
+    price: 'Desde $3,800',
+    duration: '7-12 días',
+    content: 'Nuestros safaris familiares combinan aventura y educación, creando experiencias inolvidables para toda la familia. Con actividades adaptadas para niños y alojamientos pensados para familias.',
+    includes: [
+      'Alojamientos familiares espaciosos',
+      'Actividades educativas para niños',
+      'Guías especializados en familias',
+      'Safaris adaptados para todas las edades',
+      'Actividades culturales interactivas',
+      'Menús infantiles disponibles',
+      'Programa Junior Ranger'
+    ]
+  },
+  'safari-aventura': {
+    name: 'Safari Aventura',
+    slug: 'safari-aventura',
+    description: 'Para los más intrépidos: safaris a pie, camping bajo las estrellas y experiencias de inmersión total.',
+    image: 'https://images.unsplash.com/photo-1523805009345-7448845a9e53?q=80&w=2070&auto=format&fit=crop',
+    price: 'Desde $4,200',
+    duration: '10-16 días',
+    content: 'Para los verdaderos aventureros que buscan una conexión profunda con la naturaleza africana. Safaris a pie, camping bajo las estrellas y experiencias que te pondrán en contacto directo con la vida silvestre.',
+    includes: [
+      'Safaris a pie con guardas armados',
+      'Camping bajo las estrellas',
+      'Seguimiento de animales',
+      'Experiencias de supervivencia',
+      'Caminatas nocturnas',
+      'Participación en conservación',
+      'Encuentros con comunidades locales'
+    ]
+  },
+  'trekking-gorilas': {
+    name: 'Trekking Gorilas',
+    slug: 'trekking-gorilas',
+    description: 'Encuentros íntimos y transformadores con gorilas de montaña en los volcanes de Ruanda y Uganda.',
+    image: 'https://images.unsplash.com/photo-1564760055775-d63b17a55c44?q=80&w=2070&auto=format&fit=crop',
+    price: 'Desde $7,500',
+    duration: '5-8 días',
+    content: 'Una experiencia transformadora que te llevará cara a cara con los gorilas de montaña en los volcanes de Virunga. Solo quedan menos de 1000 gorilas de montaña en el mundo, haciendo de este encuentro algo verdaderamente especial.',
+    includes: [
+      'Permisos de trekking de gorilas',
+      'Guías expertos locales',
+      'Equipo de trekking',
+      'Alojamiento cerca de los parques',
+      'Visitas a centros de conservación',
+      'Encuentros con comunidades locales',
+      'Contribución a conservación'
     ]
   }
 }
@@ -140,7 +230,11 @@ useHead({
   title: `${experiencia.name} | Anasa Viajes`,
   meta: [
     { name: 'description', content: experiencia.description }
+  ],
+  link: [
+    { rel: 'canonical', href: `https://anasaviajes.com/experiencias/${experiencia.slug}` }
   ]
 })
 </script>
+
 

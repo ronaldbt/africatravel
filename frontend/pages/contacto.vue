@@ -93,6 +93,9 @@ useHead({
   title: 'Contacto | Anasa Viajes',
   meta: [
     { name: 'description', content: 'Contacta con Anasa Viajes para planificar tu safari de lujo en África. Oficinas en Madrid, Cape Town y Arusha.' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://anasaviajes.com/contacto' }
   ]
 })
 
@@ -109,4 +112,5 @@ const handleSubmit = () => {
   form.value = { name: '', email: '', phone: '', message: '' }
 }
 </script>
+
 

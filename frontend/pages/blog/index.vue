@@ -53,6 +53,9 @@ useHead({
   meta: [
     { name: 'description', content: 'Blog sobre safaris en África, consejos de viaje, conservación y experiencias únicas. Historias y guías para planificar tu safari perfecto.' },
     { name: 'keywords', content: 'blog safari áfrica, consejos safari, guías viaje áfrica, conservación áfrica' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://anasaviajes.com/blog' }
   ]
 })
 
@@ -80,4 +83,5 @@ const posts = [
   }
 ]
 </script>
+
 
