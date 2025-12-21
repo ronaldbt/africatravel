@@ -28,8 +28,9 @@
         <div>
           <img 
             src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2070&auto=format&fit=crop"
-            alt="Sobre Anasa Viajes"
+            alt="Sobre Anasa Viajes - Safaris de lujo en África con compromiso de conservación"
             class="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
       </div>
@@ -56,12 +57,35 @@
 </template>
 
 <script setup>
+const currentUrl = 'https://anasaviajes.com/sobre-nosotros'
+
 useHead({
-  title: 'Sobre Nosotros | Anasa Viajes',
+  title: 'Sobre Nosotros | Filosofía y Compromiso con África | Anasa Viajes',
   meta: [
-    { name: 'description', content: 'Conoce la filosofía y el compromiso de Anasa Viajes con la conservación y los safaris de lujo en África.' }
+    { 
+      name: 'description', 
+      content: 'Conoce Anasa Viajes: 15+ años creando safaris de lujo en África. Nuestra filosofía combina experiencias transformadoras con conservación y apoyo a comunidades locales. 500+ viajeros satisfechos, 50+ destinos.' 
+    },
+    { 
+      name: 'keywords', 
+      content: 'sobre anasa viajes, agencia safari áfrica, conservación áfrica, safaris lujo, filosofía safari, compromiso conservación' 
+    },
+    { property: 'og:title', content: 'Sobre Nosotros | Anasa Viajes' },
+    { property: 'og:description', content: '15+ años creando safaris de lujo en África con compromiso de conservación.' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: 'Sobre Nosotros | Anasa Viajes' },
+    { name: 'twitter:description', content: 'Filosofía y compromiso con África' }
+  ],
+  link: [
+    { rel: 'canonical', href: currentUrl },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl },
+    { rel: 'alternate', hreflang: 'en', href: 'https://anasaviajes.com/en/sobre-nosotros' },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl }
   ]
 })
 </script>
+
 
 

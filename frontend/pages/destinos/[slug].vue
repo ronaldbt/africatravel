@@ -6,10 +6,14 @@
     <div v-if="destino" class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
       <!-- Hero Image -->
       <div class="relative h-[60vh] mb-16 overflow-hidden">
-        <img 
+        <NuxtImg 
           :src="destino.image" 
-          :alt="destino.name"
+          :alt="`Safari de lujo en ${destino.name} - ${destino.description} | Anasa Viajes expediciones premium`"
           class="w-full h-full object-cover"
+          loading="lazy"
+          format="webp"
+          quality="85"
+          sizes="sm:100vw md:100vw lg:100vw"
         />
         <div class="absolute inset-0 bg-gradient-to-t from-luxury-dark via-black/50 to-transparent"></div>
         <div class="absolute bottom-0 left-0 right-0 p-12">
@@ -30,6 +34,175 @@
             <p class="text-gray-300 leading-relaxed mb-6">
               {{ destino.content }}
             </p>
+
+            <!-- Contenido expandido específico para Sudáfrica -->
+            <div v-if="destino.slug === 'sudafrica'" class="mt-8 space-y-8">
+              <section>
+                <h2 class="text-3xl font-serif text-white mb-6">Parque Nacional Kruger: El Corazón del Safari Sudafricano</h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                  El <strong>Parque Nacional Kruger</strong> es uno de los destinos de safari más prestigiosos del mundo. Con sus 20,000 km² de vida silvestre protegida, alberga la mayor concentración de especies africanas, incluyendo los famosos <strong>Big Five</strong>: león, leopardo, elefante, rinoceronte y búfalo del Cabo.
+                </p>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                  Nuestros safaris de lujo en Kruger incluyen <strong>lodges exclusivos</strong> como Singita, &Beyond, y Royal Malewane, donde cada habitación ofrece vistas panorámicas a la sabana africana y servicios de <strong>mayordomo personal</strong>.
+                </p>
+                
+                <h3 class="text-2xl font-serif text-white mb-4 mt-6">¿Qué Vida Silvestre Puedes Ver en Kruger?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div class="bg-luxury-black/50 p-6 border border-white/10">
+                    <h4 class="text-luxury-gold font-serif text-lg mb-3">Los Big Five</h4>
+                    <ul class="text-gray-300 space-y-2 text-sm">
+                      <li>• <strong>Leones:</strong> Más de 1,500 ejemplares en manadas de hasta 20 individuos</li>
+                      <li>• <strong>Leopardos:</strong> Los más esquivos, mejores avistamientos al amanecer</li>
+                      <li>• <strong>Elefantes:</strong> Más de 12,000 en el parque, familias enteras</li>
+                      <li>• <strong>Rinocerontes:</strong> Blancos y negros, especies en recuperación</li>
+                      <li>• <strong>Búfalos:</strong> Manadas de cientos de ejemplares</li>
+                    </ul>
+                  </div>
+                  <div class="bg-luxury-black/50 p-6 border border-white/10">
+                    <h4 class="text-luxury-gold font-serif text-lg mb-3">Otros Animales Icónicos</h4>
+                    <ul class="text-gray-300 space-y-2 text-sm">
+                      <li>• <strong>Guepardos:</strong> Los felinos más rápidos del mundo</li>
+                      <li>• <strong>Licaones:</strong> Los perros salvajes africanos más raros</li>
+                      <li>• <strong>Hipopótamos:</strong> En los ríos Sabie y Olifants</li>
+                      <li>• <strong>Jirafas:</strong> Las torres elegantes de la sabana</li>
+                      <li>• <strong>+500 especies de aves:</strong> Paraíso para los birdwatchers</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <h2 class="text-3xl font-serif text-white mb-6">Ciudad del Cabo: Donde el Lujo se Encuentra con la Naturaleza</h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                  <strong>Ciudad del Cabo</strong> combina perfectamente la experiencia de safari con la sofisticación urbana. Situada entre la <strong>Montaña de la Mesa</strong> y dos océanos, ofrece paisajes únicos en el mundo.
+                </p>
+                
+                <h3 class="text-2xl font-serif text-white mb-4">Experiencias Exclusivas en Ciudad del Cabo</h3>
+                <div class="space-y-4 mb-6">
+                  <div class="bg-luxury-black/30 p-4 border-l-2 border-luxury-gold">
+                    <h4 class="text-white font-serif mb-2">Wine Lands de Stellenbosch & Franschhoek</h4>
+                    <p class="text-gray-300 text-sm">Degustaciones privadas en bodegas históricas como Klein Constantia y Boschendal, con maridajes de chef y helicóptero privado.</p>
+                  </div>
+                  <div class="bg-luxury-black/30 p-4 border-l-2 border-luxury-gold">
+                    <h4 class="text-white font-serif mb-2">Avistamiento de Tiburones Blancos</h4>
+                    <p class="text-gray-300 text-sm">Buceo en jaula con los depredadores más temidos del océano en Gansbaai, con yate privado y chef a bordo.</p>
+                  </div>
+                  <div class="bg-luxury-black/30 p-4 border-l-2 border-luxury-gold">
+                    <h4 class="text-white font-serif mb-2">Pingüinos de Boulders Beach</h4>
+                    <p class="text-gray-300 text-sm">Encuentros íntimos con la única colonia de pingüinos africanos en playas privadas con guía especializado.</p>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <h2 class="text-3xl font-serif text-white mb-6">Temporadas y Clima: Cuándo Viajar a Sudáfrica</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div class="bg-luxury-black/50 p-6 border border-white/10">
+                    <h4 class="text-luxury-gold font-serif text-lg mb-3">Temporada Seca (Mayo - Septiembre)</h4>
+                    <p class="text-gray-300 text-sm mb-3"><strong>Mejor época para safaris</strong> - Los animales se congregan en fuentes de agua, facilitando avistamientos.</p>
+                    <ul class="text-gray-300 space-y-1 text-sm">
+                      <li>• <strong>Temperatura:</strong> 10-25°C, noches frías</li>
+                      <li>• <strong>Lluvia:</strong> Mínima, cielos despejados</li>
+                      <li>• <strong>Vegetación:</strong> Menos densa, mejor visibilidad</li>
+                      <li>• <strong>Precios:</strong> Alta temporada, reservar con anticipación</li>
+                    </ul>
+                  </div>
+                  <div class="bg-luxury-black/50 p-6 border border-white/10">
+                    <h4 class="text-luxury-gold font-serif text-lg mb-3">Temporada Verde (Octubre - Abril)</h4>
+                    <p class="text-gray-300 text-sm mb-3"><strong>Temporada de nacimientos</strong> - Crías de animales y paisajes verdes exuberantes.</p>
+                    <ul class="text-gray-300 space-y-1 text-sm">
+                      <li>• <strong>Temperatura:</strong> 20-35°C, días calurosos</li>
+                      <li>• <strong>Lluvia:</strong> Tormentas vespertinas breves</li>
+                      <li>• <strong>Vida silvestre:</strong> Animales más dispersos</li>
+                      <li>• <strong>Ventajas:</strong> Menos turistas, precios mejores</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <h2 class="text-3xl font-serif text-white mb-6">Lodges de Ultra Lujo en Sudáfrica</h2>
+                <p class="text-gray-300 leading-relaxed mb-4">
+                  Sudáfrica alberga algunos de los <strong>lodges más exclusivos del mundo</strong>, donde el servicio impecable se combina con la aventura del safari.
+                </p>
+                
+                <div class="space-y-6">
+                  <div class="bg-gradient-to-r from-luxury-black to-luxury-dark p-6 border border-white/10">
+                    <h4 class="text-luxury-gold font-serif text-xl mb-3">Singita Kruger National Park</h4>
+                    <p class="text-gray-300 text-sm mb-3">El epítome del safari de lujo con solo 15 suites, cada una con piscina privada y mayordomo personal. Desde $2,500/noche.</p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="text-xs bg-luxury-gold/20 text-luxury-gold px-2 py-1 rounded">Piscina Privada</span>
+                      <span class="text-xs bg-luxury-gold/20 text-luxury-gold px-2 py-1 rounded">Mayordomo 24/7</span>
+                      <span class="text-xs bg-luxury-gold/20 text-luxury-gold px-2 py-1 rounded">Chef Privado</span>
+                    </div>
+                  </div>
+                  
+                  <div class="bg-gradient-to-r from-luxury-black to-luxury-dark p-6 border border-white/10">
+                    <h4 class="text-luxury-gold font-serif text-xl mb-3">Royal Malewane</h4>
+                    <p class="text-gray-300 text-sm mb-3">Elegancia colonial en Greater Kruger con spa de lujo y actividades personalizadas. Desde $1,800/noche.</p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="text-xs bg-luxury-gold/20 text-luxury-gold px-2 py-1 rounded">Spa de Lujo</span>
+                      <span class="text-xs bg-luxury-gold/20 text-luxury-gold px-2 py-1 rounded">Safaris Nocturnos</span>
+                      <span class="text-xs bg-luxury-gold/20 text-luxury-gold px-2 py-1 rounded">Wine Cellar</span>
+                    </div>
+                  </div>
+
+                  <div class="bg-gradient-to-r from-luxury-black to-luxury-dark p-6 border border-white/10">
+                    <h4 class="text-luxury-gold font-serif text-xl mb-3">&Beyond Phinda Private Game Reserve</h4>
+                    <p class="text-gray-300 text-sm mb-3">Reserva privada en KwaZulu-Natal con 7 ecosistemas diferentes y playa exclusiva. Desde $1,200/noche.</p>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="text-xs bg-luxury-gold/20 text-luxury-gold px-2 py-1 rounded">7 Ecosistemas</span>
+                      <span class="text-xs bg-luxury-gold/20 text-luxury-gold px-2 py-1 rounded">Acceso a Playa</span>
+                      <span class="text-xs bg-luxury-gold/20 text-luxury-gold px-2 py-1 rounded">Comunidad Local</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <h2 class="text-3xl font-serif text-white mb-6">Itinerarios Recomendados</h2>
+                
+                <div class="space-y-6">
+                  <div class="bg-luxury-black/50 p-6 border border-white/10">
+                    <h4 class="text-luxury-gold font-serif text-lg mb-3">Safari Clásico (7 días) - Desde $8,500</h4>
+                    <ul class="text-gray-300 space-y-2 text-sm">
+                      <li><strong>Días 1-2:</strong> Llegada Ciudad del Cabo, tour wine lands Stellenbosch</li>
+                      <li><strong>Días 3-5:</strong> Safari privado Kruger National Park, lodge de lujo</li>
+                      <li><strong>Días 6-7:</strong> Hermanus para avistamiento ballenas, vuelo de regreso</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="bg-luxury-black/50 p-6 border border-white/10">
+                    <h4 class="text-luxury-gold font-serif text-lg mb-3">Gran Safari Sudáfrica (14 días) - Desde $18,500</h4>
+                    <ul class="text-gray-300 space-y-2 text-sm">
+                      <li><strong>Días 1-3:</strong> Ciudad del Cabo: Montaña Mesa, wine tours, Boulders Beach</li>
+                      <li><strong>Días 4-8:</strong> Kruger National Park: Multiple lodges, safaris diversos</li>
+                      <li><strong>Días 9-11:</strong> Madikwe Game Reserve: Safari walking, cultura local</li>
+                      <li><strong>Días 12-14:</strong> Hermanus y Garden Route: Ballenas, paisajes</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <h2 class="text-3xl font-serif text-white mb-6">¿Por Qué Elegir Sudáfrica para tu Safari de Lujo?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div class="text-center">
+                    <div class="text-luxury-gold text-2xl font-serif mb-2">97%</div>
+                    <p class="text-gray-300 text-sm">Probabilidad de ver los Big Five en Kruger</p>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-luxury-gold text-2xl font-serif mb-2">300+</div>
+                    <p class="text-gray-300 text-sm">Días de sol al año en Ciudad del Cabo</p>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-luxury-gold text-2xl font-serif mb-2">12</div>
+                    <p class="text-gray-300 text-sm">Meses ideales para viajar (clima templado)</p>
+                  </div>
+                </div>
+              </section>
+            </div>
             
             <h3 class="text-2xl font-serif text-white mb-4 mt-8">Qué ver y hacer</h3>
             <ul class="space-y-3 text-gray-300">
@@ -88,7 +261,7 @@ const destinos = {
     slug: 'sudafrica',
     countryCode: 'ZA',
     description: 'La combinación perfecta de safari de clase mundial, viñedos históricos y la cosmopolita Cape Town.',
-    image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2068&auto=format&fit=crop',
     price: 'Desde $3,200',
     duration: '7-14 días',
     season: 'Mayo - Septiembre',
@@ -249,14 +422,35 @@ const breadcrumbItems = computed(() => [
   { label: destino.name }
 ])
 
+const currentUrl = computed(() => `https://anasaviajes.com/destinos/${destino.slug}`)
+const imageUrl = computed(() => destino.image.startsWith('http') ? destino.image : `https://anasaviajes.com${destino.image}`)
+
 useHead({
-  title: `${destino.name} | Safaris de Lujo | Anasa Viajes`,
+  title: `Safari en ${destino.name} | ${destino.price} | Anasa Viajes`,
   meta: [
-    { name: 'description', content: destino.description },
-    { name: 'keywords', content: `safari ${destino.name.toLowerCase()}, viajes ${destino.name.toLowerCase()}, turismo ${destino.name.toLowerCase()}, ${destino.name.toLowerCase()} lujo` }
+    { 
+      name: 'description', 
+      content: `Safari de lujo en ${destino.name}. ${destino.description} Duración: ${destino.duration}. Mejor época: ${destino.season}. Precio desde ${destino.price}.` 
+    },
+    { 
+      name: 'keywords', 
+      content: `safari ${destino.name.toLowerCase()}, viajes ${destino.name.toLowerCase()}, turismo ${destino.name.toLowerCase()}, ${destino.name.toLowerCase()} lujo, safari ${destino.countryCode}, big five ${destino.name.toLowerCase()}` 
+    },
+    { property: 'og:title', content: `Safari de Lujo en ${destino.name} | Anasa Viajes` },
+    { property: 'og:description', content: destino.description },
+    { property: 'og:image', content: imageUrl.value },
+    { property: 'og:url', content: currentUrl.value },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: `Safari en ${destino.name} | Anasa Viajes` },
+    { name: 'twitter:description', content: destino.description },
+    { name: 'twitter:image', content: imageUrl.value }
   ],
   link: [
-    { rel: 'canonical', href: `https://anasaviajes.com/destinos/${destino.slug}` }
+    { rel: 'canonical', href: currentUrl.value },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl.value },
+    { rel: 'alternate', hreflang: 'en', href: `https://anasaviajes.com/en/destinos/${destino.slug}` },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl.value }
   ]
 })
 </script>

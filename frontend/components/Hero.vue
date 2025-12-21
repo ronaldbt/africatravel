@@ -2,10 +2,14 @@
   <div class="relative h-screen w-full overflow-hidden">
     <!-- Dynamic Background -->
     <div class="absolute inset-0">
-      <img 
+      <NuxtImg 
         src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=2071&auto=format&fit=crop" 
-        alt="African Landscape" 
+        alt="Safari de lujo en África - Paisajes salvajes untamed donde el lujo se encuentra con la naturaleza" 
         class="w-full h-full object-cover animate-slow-zoom"
+        format="webp"
+        quality="90"
+        sizes="100vw"
+        priority
       />
       <!-- Luxury Gradient Overlay -->
       <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-luxury-dark"></div>
@@ -20,8 +24,8 @@
         </span>
         
         <h1 class="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] mb-8">
-          Africa <br />
-          <span class="italic opacity-80 font-light text-5xl md:text-7xl lg:text-8xl">Untamed</span>
+          Safaris de Lujo en <span class="text-luxury-gold">África</span><br />
+          <span class="italic opacity-80 font-light text-5xl md:text-7xl lg:text-8xl">Expediciones Premium</span>
         </h1>
         
         <p class="text-gray-300 text-sm md:text-base max-w-lg leading-loose font-light border-l border-luxury-gold/50 pl-6 mb-12">

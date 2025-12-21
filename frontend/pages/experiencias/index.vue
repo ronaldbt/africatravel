@@ -22,8 +22,9 @@
           <div class="aspect-[4/3] overflow-hidden">
             <img 
               :src="exp.image" 
-              :alt="exp.name"
+              :alt="`${exp.name} en África - ${exp.description}`"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              loading="lazy"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
           </div>
@@ -48,14 +49,32 @@
 </template>
 
 <script setup>
+const currentUrl = 'https://anasaviajes.com/experiencias'
+
 useHead({
-  title: 'Experiencias de Safari en África | Anasa Viajes',
+  title: 'Experiencias Únicas de Safari en África | Lujo, Gran Migración, Big Five | Anasa Viajes',
   meta: [
-    { name: 'description', content: 'Descubre experiencias únicas de safari en África: safaris de lujo, gran migración, big five, safaris fotográficos y más. Experiencias personalizadas y exclusivas.' },
-    { name: 'keywords', content: 'experiencias safari áfrica, safari lujo, gran migración, big five, safari fotográfico, safari romántico, trekking gorilas' }
+    { 
+      name: 'description', 
+      content: 'Descubre experiencias únicas de safari en África: safaris de lujo con lodges exclusivos, gran migración en Serengeti/Masai Mara, búsqueda del Big Five, safaris fotográficos, safaris románticos, trekking de gorilas y más. Experiencias personalizadas y exclusivas.' 
+    },
+    { 
+      name: 'keywords', 
+      content: 'experiencias safari áfrica, safari lujo, gran migración, big five, safari fotográfico, safari romántico, trekking gorilas, safari familiar, safari aventura' 
+    },
+    { property: 'og:title', content: 'Experiencias Únicas de Safari en África | Anasa Viajes' },
+    { property: 'og:description', content: 'Experiencias únicas de safari: lujo, gran migración, big five, fotográfico y más.' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Experiencias de Safari en África | Anasa Viajes' },
+    { name: 'twitter:description', content: 'Experiencias únicas de safari personalizadas' }
   ],
   link: [
-    { rel: 'canonical', href: 'https://anasaviajes.com/experiencias' }
+    { rel: 'canonical', href: currentUrl },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl },
+    { rel: 'alternate', hreflang: 'en', href: 'https://anasaviajes.com/en/experiencias' },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl }
   ]
 })
 
@@ -110,5 +129,6 @@ const experiencias = [
   }
 ]
 </script>
+
 
 

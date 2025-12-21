@@ -456,17 +456,39 @@ const breadcrumbItems = computed(() => [
   { label: guia.title }
 ])
 
+const currentUrl = computed(() => `https://anasaviajes.com/guia-viajero/${guia.slug}`)
+const defaultImage = 'https://anasaviajes.com/og-image.jpg'
+
 useHead({
-  title: `${guia.title} | Guía de Safari | Anasa Viajes`,
+  title: `${guia.title} | Guía Completa de Safari | Anasa Viajes`,
   meta: [
-    { name: 'description', content: guia.excerpt },
-    { name: 'keywords', content: `${guia.title.toLowerCase()}, safari áfrica, guía viaje, consejos safari, ${guia.category.toLowerCase()}` },
+    { 
+      name: 'description', 
+      content: `${guia.excerpt} Tiempo de lectura: ${guia.readTime}. Guía completa con consejos prácticos y tips para tu safari en África.` 
+    },
+    { 
+      name: 'keywords', 
+      content: `${guia.title.toLowerCase()}, safari áfrica, guía viaje, consejos safari, ${guia.category.toLowerCase()}, planificación safari` 
+    },
     { name: 'author', content: guia.author },
     { property: 'article:published_time', content: guia.publishedAt },
-    { property: 'article:section', content: guia.category }
+    { property: 'article:section', content: guia.category },
+    { property: 'article:author', content: guia.author },
+    { property: 'og:title', content: `${guia.title} | Anasa Viajes` },
+    { property: 'og:description', content: guia.excerpt },
+    { property: 'og:image', content: defaultImage },
+    { property: 'og:url', content: currentUrl.value },
+    { property: 'og:type', content: 'article' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: `${guia.title} | Anasa Viajes` },
+    { name: 'twitter:description', content: guia.excerpt },
+    { name: 'twitter:image', content: defaultImage }
   ],
   link: [
-    { rel: 'canonical', href: `https://anasaviajes.com/guia-viajero/${guia.slug}` }
+    { rel: 'canonical', href: currentUrl.value },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl.value },
+    { rel: 'alternate', hreflang: 'en', href: `https://anasaviajes.com/en/guia-viajero/${guia.slug}` },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl.value }
   ]
 })
 </script>

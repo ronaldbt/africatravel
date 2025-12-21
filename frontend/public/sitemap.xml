@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://anasaviajes.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/destinos</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/destinos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/destinos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/destinos" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/experiencias</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/experiencias" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/experiencias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/experiencias" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/tipo-viaje</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/tipo-viaje" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/tipo-viaje" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/tipo-viaje" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/guia-viajero</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/guia-viajero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/guia-viajero" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/guia-viajero" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/blog</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/blog" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/contacto</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/contacto" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/contacto" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/diseñador-ia</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/diseñador-ia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/diseñador-ia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/diseñador-ia" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/sobre-nosotros</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/sobre-nosotros" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/sobre-nosotros" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/sobre-nosotros" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/destinos/sudafrica</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/destinos/sudafrica" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/destinos/sudafrica" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/destinos/sudafrica" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/destinos/kenia</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/destinos/kenia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/destinos/kenia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/destinos/kenia" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/destinos/tanzania</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/destinos/tanzania" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/destinos/tanzania" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/destinos/tanzania" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/destinos/botswana</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/destinos/botswana" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/destinos/botswana" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/destinos/botswana" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/destinos/namibia</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/destinos/namibia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/destinos/namibia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/destinos/namibia" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/destinos/ruanda</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/destinos/ruanda" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/destinos/ruanda" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/destinos/ruanda" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/destinos/madagascar</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/destinos/madagascar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/destinos/madagascar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/destinos/madagascar" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/experiencias/safari-lujo</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/experiencias/safari-lujo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/experiencias/safari-lujo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/experiencias/safari-lujo" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/experiencias/gran-migracion</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/experiencias/gran-migracion" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/experiencias/gran-migracion" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/experiencias/gran-migracion" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/experiencias/big-five</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/experiencias/big-five" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/experiencias/big-five" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/experiencias/big-five" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/experiencias/safari-fotografico</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/experiencias/safari-fotografico" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/experiencias/safari-fotografico" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/experiencias/safari-fotografico" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/experiencias/safari-romantico</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/experiencias/safari-romantico" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/experiencias/safari-romantico" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/experiencias/safari-romantico" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/experiencias/safari-familiar</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/experiencias/safari-familiar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/experiencias/safari-familiar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/experiencias/safari-familiar" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/experiencias/safari-aventura</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/experiencias/safari-aventura" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/experiencias/safari-aventura" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/experiencias/safari-aventura" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/experiencias/trekking-gorilas</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/experiencias/trekking-gorilas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/experiencias/trekking-gorilas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/experiencias/trekking-gorilas" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/guia-viajero/mejor-epoca-viajar</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/guia-viajero/mejor-epoca-viajar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/guia-viajero/mejor-epoca-viajar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/guia-viajero/mejor-epoca-viajar" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/guia-viajero/que-llevar-safari</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/guia-viajero/que-llevar-safari" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/guia-viajero/que-llevar-safari" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/guia-viajero/que-llevar-safari" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/guia-viajero/visados-africa</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/guia-viajero/visados-africa" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/guia-viajero/visados-africa" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/guia-viajero/visados-africa" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/tipo-viaje/safari-7-dias</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/tipo-viaje/safari-7-dias" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/tipo-viaje/safari-7-dias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/tipo-viaje/safari-7-dias" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/tipo-viaje/safari-10-dias</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/tipo-viaje/safari-10-dias" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/tipo-viaje/safari-10-dias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/tipo-viaje/safari-10-dias" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/tipo-viaje/safari-14-dias</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/tipo-viaje/safari-14-dias" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/tipo-viaje/safari-14-dias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/tipo-viaje/safari-14-dias" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/en" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/en" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/en/destinos</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/destinos" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/destinos" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/destinos" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/en/experiencias</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/experiencias" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/experiencias" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/experiencias" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/en/tipo-viaje</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/tipo-viaje" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/tipo-viaje" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/tipo-viaje" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/en/guia-viajero</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/guia-viajero" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/guia-viajero" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/guia-viajero" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/en/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/blog" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/blog" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/en/contacto</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/contacto" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/contacto" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/contacto" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/en/diseñador-ia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/diseñador-ia" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/diseñador-ia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/diseñador-ia" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anasaviajes.com/en/sobre-nosotros</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anasaviajes.com/en/sobre-nosotros" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://anasaviajes.com/sobre-nosotros" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anasaviajes.com/sobre-nosotros" />
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

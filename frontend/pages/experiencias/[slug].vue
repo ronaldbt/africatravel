@@ -6,8 +6,9 @@
       <div class="relative h-[60vh] mb-16 overflow-hidden">
         <img 
           :src="experiencia.image" 
-          :alt="experiencia.name"
+          :alt="`${experiencia.name} en África - ${experiencia.description}`"
           class="w-full h-full object-cover"
+          loading="lazy"
         />
         <div class="absolute inset-0 bg-gradient-to-t from-luxury-dark via-black/50 to-transparent"></div>
         <div class="absolute bottom-0 left-0 right-0 p-12">
@@ -226,15 +227,38 @@ const breadcrumbItems = [
   { label: experiencia.name }
 ]
 
+const currentUrl = computed(() => `https://anasaviajes.com/experiencias/${experiencia.slug}`)
+const imageUrl = computed(() => experiencia.image.startsWith('http') ? experiencia.image : `https://anasaviajes.com${experiencia.image}`)
+
 useHead({
-  title: `${experiencia.name} | Anasa Viajes`,
+  title: `${experiencia.name} en África | ${experiencia.price} | Anasa Viajes`,
   meta: [
-    { name: 'description', content: experiencia.description }
+    { 
+      name: 'description', 
+      content: `${experiencia.name}: ${experiencia.description} Duración: ${experiencia.duration}. Precio desde ${experiencia.price}. Reserva tu experiencia única en África.` 
+    },
+    { 
+      name: 'keywords', 
+      content: `${experiencia.name.toLowerCase()}, safari ${experiencia.name.toLowerCase()}, ${experiencia.name.toLowerCase()} áfrica, experiencia safari, safari lujo` 
+    },
+    { property: 'og:title', content: `${experiencia.name} | Anasa Viajes` },
+    { property: 'og:description', content: experiencia.description },
+    { property: 'og:image', content: imageUrl.value },
+    { property: 'og:url', content: currentUrl.value },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: `${experiencia.name} | Anasa Viajes` },
+    { name: 'twitter:description', content: experiencia.description },
+    { name: 'twitter:image', content: imageUrl.value }
   ],
   link: [
-    { rel: 'canonical', href: `https://anasaviajes.com/experiencias/${experiencia.slug}` }
+    { rel: 'canonical', href: currentUrl.value },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl.value },
+    { rel: 'alternate', hreflang: 'en', href: `https://anasaviajes.com/en/experiencias/${experiencia.slug}` },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl.value }
   ]
 })
 </script>
+
 
 

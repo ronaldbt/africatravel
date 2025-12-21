@@ -16,6 +16,8 @@
       <div 
         class="h-[60vh] relative bg-fixed bg-cover bg-center overflow-hidden group" 
         style="background-image: url('https://images.unsplash.com/photo-1519659528534-7fd733a832a0?q=80&w=2026&auto=format&fit=crop')"
+        role="img"
+        aria-label="Safari de lujo en África - Experiencia única"
       >
         <div class="absolute inset-0 bg-black/40 transition-opacity duration-700 group-hover:bg-black/20"></div>
         <div class="absolute inset-0 flex items-center justify-center">
@@ -70,6 +72,20 @@ const schema = {
     }
   }
 }
+
+const currentUrl = 'https://anasaviajes.com'
+
+useHead({
+  meta: [
+    { property: 'og:url', content: currentUrl },
+    { name: 'twitter:url', content: currentUrl }
+  ],
+  link: [
+    { rel: 'alternate', hreflang: 'es', href: currentUrl },
+    { rel: 'alternate', hreflang: 'en', href: 'https://anasaviajes.com/en' },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl }
+  ]
+})
 
 onMounted(() => {
   // Scroll reveal functionality

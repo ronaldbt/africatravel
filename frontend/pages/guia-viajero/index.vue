@@ -45,11 +45,32 @@
 </template>
 
 <script setup>
+const currentUrl = 'https://anasaviajes.com/guia-viajero'
+
 useHead({
-  title: 'Guía del Viajero | Consejos para Safari en África | Anasa Viajes',
+  title: 'Guía del Viajero | Consejos Completos para Safari en África | Anasa Viajes',
   meta: [
-    { name: 'description', content: 'Guía completa para viajar a África: mejor época, qué llevar, visados, vacunas, seguridad y más. Todo lo que necesitas saber para tu safari.' },
-    { name: 'keywords', content: 'guía safari áfrica, mejor época safari, qué llevar safari, visados áfrica, vacunas áfrica, consejos safari' }
+    { 
+      name: 'description', 
+      content: 'Guía completa para viajar a África: mejor época para cada destino, qué llevar en safari, requisitos de visados, vacunas necesarias, consejos de seguridad y presupuesto. Todo lo que necesitas saber para planificar tu safari perfecto.' 
+    },
+    { 
+      name: 'keywords', 
+      content: 'guía safari áfrica, mejor época safari, qué llevar safari, visados áfrica, vacunas áfrica, consejos safari, seguridad safari, presupuesto safari' 
+    },
+    { property: 'og:title', content: 'Guía del Viajero | Consejos para Safari en África | Anasa Viajes' },
+    { property: 'og:description', content: 'Guía completa para planificar tu safari en África: mejor época, qué llevar, visados, vacunas y más.' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: 'Guía del Viajero | Anasa Viajes' },
+    { name: 'twitter:description', content: 'Guía completa para planificar tu safari en África' }
+  ],
+  link: [
+    { rel: 'canonical', href: currentUrl },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl },
+    { rel: 'alternate', hreflang: 'en', href: 'https://anasaviajes.com/en/guia-viajero' },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl }
   ]
 })
 
@@ -92,5 +113,6 @@ const guias = [
   }
 ]
 </script>
+
 
 

@@ -22,8 +22,9 @@
           <div class="aspect-[4/3] overflow-hidden">
             <img 
               :src="destino.image" 
-              :alt="destino.name"
+              :alt="`Safari de lujo en ${destino.name} - ${destino.description}`"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              loading="lazy"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
           </div>
@@ -48,14 +49,32 @@
 </template>
 
 <script setup>
+const currentUrl = 'https://anasaviajes.com/destinos'
+
 useHead({
-  title: 'Destinos en África | Anasa Viajes',
+  title: 'Destinos de Safari en África | Sudáfrica, Kenia, Tanzania y Más | Anasa Viajes',
   meta: [
-    { name: 'description', content: 'Descubre los destinos más exclusivos de África: Sudáfrica, Kenia, Tanzania, Botswana, Namibia, Ruanda y Madagascar. Safaris de lujo personalizados.' },
-    { name: 'keywords', content: 'destinos áfrica, safari sudafrica, safari kenia, safari tanzania, safari botswana, safari namibia, safari ruanda, safari madagascar' }
+    { 
+      name: 'description', 
+      content: 'Descubre los destinos más exclusivos de África para safaris de lujo: Sudáfrica (Kruger, Cape Town), Kenia (Masai Mara), Tanzania (Serengeti, Ngorongoro), Botswana (Okavango), Namibia, Ruanda (gorilas) y Madagascar. Itinerarios personalizados.' 
+    },
+    { 
+      name: 'keywords', 
+      content: 'destinos áfrica, safari sudafrica, safari kenia, safari tanzania, safari botswana, safari namibia, safari ruanda, safari madagascar, kruger, masai mara, serengeti, okavango' 
+    },
+    { property: 'og:title', content: 'Destinos de Safari en África | Anasa Viajes' },
+    { property: 'og:description', content: 'Descubre los destinos más exclusivos de África para safaris de lujo personalizados.' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Destinos de Safari en África | Anasa Viajes' },
+    { name: 'twitter:description', content: 'Destinos exclusivos para safaris de lujo en África' }
   ],
   link: [
-    { rel: 'canonical', href: 'https://anasaviajes.com/destinos' }
+    { rel: 'canonical', href: currentUrl },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl },
+    { rel: 'alternate', hreflang: 'en', href: 'https://anasaviajes.com/en/destinos' },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl }
   ]
 })
 
@@ -64,7 +83,7 @@ const destinos = [
     slug: 'sudafrica',
     name: 'Sudáfrica',
     description: 'La combinación perfecta de safari de clase mundial, viñedos históricos y la cosmopolita Cape Town.',
-    image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2068&auto=format&fit=crop'
   },
   {
     slug: 'kenia',
@@ -104,5 +123,6 @@ const destinos = [
   }
 ]
 </script>
+
 
 

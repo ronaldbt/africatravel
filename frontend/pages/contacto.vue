@@ -89,13 +89,32 @@
 </template>
 
 <script setup>
+const currentUrl = 'https://anasaviajes.com/contacto'
+
 useHead({
-  title: 'Contacto | Anasa Viajes',
+  title: 'Contacto | Planifica tu Safari de Lujo en África | Anasa Viajes',
   meta: [
-    { name: 'description', content: 'Contacta con Anasa Viajes para planificar tu safari de lujo en África. Oficinas en Madrid, Cape Town y Arusha.' }
+    { 
+      name: 'description', 
+      content: 'Contacta con Anasa Viajes para planificar tu safari de lujo personalizado en África. Oficinas en Madrid, Cape Town y Arusha. Consulta gratuita y presupuesto sin compromiso.' 
+    },
+    { 
+      name: 'keywords', 
+      content: 'contacto safari áfrica, presupuesto safari, consulta safari lujo, agencia safari áfrica' 
+    },
+    { property: 'og:title', content: 'Contacto | Anasa Viajes' },
+    { property: 'og:description', content: 'Planifica tu safari de lujo en África. Consulta gratuita y presupuesto sin compromiso.' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: 'Contacto | Anasa Viajes' },
+    { name: 'twitter:description', content: 'Planifica tu safari de lujo en África' }
   ],
   link: [
-    { rel: 'canonical', href: 'https://anasaviajes.com/contacto' }
+    { rel: 'canonical', href: currentUrl },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl },
+    { rel: 'alternate', hreflang: 'en', href: 'https://anasaviajes.com/en/contacto' },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl }
   ]
 })
 
@@ -112,5 +131,6 @@ const handleSubmit = () => {
   form.value = { name: '', email: '', phone: '', message: '' }
 }
 </script>
+
 
 

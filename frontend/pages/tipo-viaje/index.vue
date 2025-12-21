@@ -41,11 +41,32 @@
 </template>
 
 <script setup>
+const currentUrl = 'https://anasaviajes.com/tipo-viaje'
+
 useHead({
-  title: 'Tipo de Viaje | Duración de Safari | Anasa Viajes',
+  title: 'Safaris por Duración | 7, 10, 14 Días y Más | Anasa Viajes',
   meta: [
-    { name: 'description', content: 'Safaris de 7 días, 10 días, 14 días y más. Encuentra el safari perfecto según la duración de tu viaje.' },
-    { name: 'keywords', content: 'safari 7 días, safari 10 días, safari 14 días, safari 3 semanas, expediciones áfrica' }
+    { 
+      name: 'description', 
+      content: 'Encuentra el safari perfecto según la duración de tu viaje. Safaris de 7 días desde €2,800, 10 días desde €4,200, 14 días desde €6,800 y expediciones de 3 semanas. Itinerarios personalizados para cada duración.' 
+    },
+    { 
+      name: 'keywords', 
+      content: 'safari 7 días, safari 10 días, safari 14 días, safari 3 semanas, expediciones áfrica, safari corto, safari largo, duración safari' 
+    },
+    { property: 'og:title', content: 'Safaris por Duración | Anasa Viajes' },
+    { property: 'og:description', content: 'Encuentra el safari perfecto según la duración: 7, 10, 14 días y más. Itinerarios personalizados.' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary' },
+    { name: 'twitter:title', content: 'Safaris por Duración | Anasa Viajes' },
+    { name: 'twitter:description', content: 'Encuentra el safari perfecto según la duración de tu viaje' }
+  ],
+  link: [
+    { rel: 'canonical', href: currentUrl },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl },
+    { rel: 'alternate', hreflang: 'en', href: 'https://anasaviajes.com/en/tipo-viaje' },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl }
   ]
 })
 
@@ -80,5 +101,6 @@ const tipos = [
   }
 ]
 </script>
+
 
 

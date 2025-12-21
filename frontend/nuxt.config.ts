@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/image'],
   i18n: {
     locales: [
       {
@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       }
     ],
     lazy: true,
-    langDir: 'locales/',
+    langDir: 'locales',
     defaultLocale: 'es',
     strategy: 'prefix_except_default', // /es/ (default), /en/
     detectBrowserLanguage: {
@@ -28,11 +28,71 @@ export default defineNuxtConfig({
       redirectOn: 'root'
     }
   },
+  vite: {
+    build: {
+      cssCodeSplit: true,
+      minify: 'terser',
+      sourcemap: false,
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+          pure_funcs: ['console.log', 'console.info', 'console.debug'],
+          passes: 2
+        }
+      },
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vue-vendor': ['vue', 'vue-router'],
+            'nuxt-vendor': ['@nuxt/kit']
+          },
+          chunkFileNames: '_nuxt/js/[name]-[hash].js',
+          entryFileNames: '_nuxt/js/[name]-[hash].js',
+          assetFileNames: '_nuxt/assets/[name]-[hash].[ext]'
+        }
+      }
+    }
+  },
   nitro: {
     prerender: {
       crawlLinks: true,
       failOnError: false,
       ignore: ['/guia-viajero/vacunas-africa', '/guia-viajero/seguridad-africa', '/guia-viajero/presupuesto-safari']
+    },
+    compressPublicAssets: {
+      gzip: true,
+      brotli: true
+    },
+    minify: true,
+    routeRules: {
+      '/_nuxt/**': {
+        headers: {
+          'Cache-Control': 'public, max-age=31536000, immutable'
+        }
+      },
+      '/sitemap.xml': {
+        headers: {
+          'Cache-Control': 'public, max-age=3600'
+        }
+      },
+      '/robots.txt': {
+        headers: {
+          'Cache-Control': 'public, max-age=86400'
+        }
+      },
+      '/': { 
+        prerender: true, 
+        headers: { 'Cache-Control': 'public, max-age=3600' } 
+      },
+      '/destinos/**': { 
+        prerender: true, 
+        headers: { 'Cache-Control': 'public, max-age=3600' } 
+      },
+      '/experiencias/**': { 
+        prerender: true, 
+        headers: { 'Cache-Control': 'public, max-age=3600' } 
+      }
     }
   },
   runtimeConfig: {
@@ -73,8 +133,82 @@ export default defineNuxtConfig({
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap' }
+        { 
+          rel: 'stylesheet', 
+          href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap',
+          media: 'print',
+          onload: "this.media='all'"
+        }
       ]
     }
+  },
+  image: {
+    quality: 85,
+    format: ['webp', 'avif'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536
+    },
+    densities: [1, 2],
+    domains: ['images.unsplash.com'],
+    providers: {
+      unsplash: {
+        provider: 'unsplash'
+      }
+    }
+  },
+  site: {
+    url: 'https://anasaviajes.com',
+    name: 'Anasa Viajes',
+    description: 'Safari de lujo en África | Expediciones premium personalizadas'
+  },
+  sitemap: {
+    hostname: 'https://anasaviajes.com',
+    gzip: true,
+    routes: [
+      // Páginas principales
+      { url: '/', changefreq: 'daily', priority: 1.0 },
+      { url: '/destinos', changefreq: 'weekly', priority: 0.9 },
+      { url: '/experiencias', changefreq: 'weekly', priority: 0.9 },
+      { url: '/tipo-viaje', changefreq: 'weekly', priority: 0.8 },
+      { url: '/guia-viajero', changefreq: 'weekly', priority: 0.8 },
+      { url: '/blog', changefreq: 'daily', priority: 0.8 },
+      { url: '/contacto', changefreq: 'monthly', priority: 0.7 },
+      { url: '/diseñador-ia', changefreq: 'weekly', priority: 0.8 },
+      { url: '/sobre-nosotros', changefreq: 'monthly', priority: 0.6 },
+      
+      // Destinos
+      { url: '/destinos/sudafrica', changefreq: 'weekly', priority: 0.9 },
+      { url: '/destinos/kenia', changefreq: 'weekly', priority: 0.9 },
+      { url: '/destinos/tanzania', changefreq: 'weekly', priority: 0.9 },
+      { url: '/destinos/botswana', changefreq: 'weekly', priority: 0.9 },
+      { url: '/destinos/namibia', changefreq: 'weekly', priority: 0.9 },
+      { url: '/destinos/ruanda', changefreq: 'weekly', priority: 0.9 },
+      { url: '/destinos/madagascar', changefreq: 'weekly', priority: 0.9 },
+      
+      // Experiencias
+      { url: '/experiencias/safari-lujo', changefreq: 'weekly', priority: 0.8 },
+      { url: '/experiencias/gran-migracion', changefreq: 'weekly', priority: 0.8 },
+      { url: '/experiencias/big-five', changefreq: 'weekly', priority: 0.8 },
+      { url: '/experiencias/safari-fotografico', changefreq: 'weekly', priority: 0.8 },
+      { url: '/experiencias/safari-romantico', changefreq: 'weekly', priority: 0.8 },
+      { url: '/experiencias/safari-familiar', changefreq: 'weekly', priority: 0.8 },
+      { url: '/experiencias/safari-aventura', changefreq: 'weekly', priority: 0.8 },
+      { url: '/experiencias/trekking-gorilas', changefreq: 'weekly', priority: 0.8 },
+      
+      // Guías de viajero
+      { url: '/guia-viajero/mejor-epoca-viajar', changefreq: 'monthly', priority: 0.7 },
+      { url: '/guia-viajero/que-llevar-safari', changefreq: 'monthly', priority: 0.7 },
+      { url: '/guia-viajero/visados-africa', changefreq: 'monthly', priority: 0.7 },
+      
+      // Tipos de viaje
+      { url: '/tipo-viaje/safari-7-dias', changefreq: 'weekly', priority: 0.7 },
+      { url: '/tipo-viaje/safari-10-dias', changefreq: 'weekly', priority: 0.7 },
+      { url: '/tipo-viaje/safari-14-dias', changefreq: 'weekly', priority: 0.7 },
+    ]
   }
 })

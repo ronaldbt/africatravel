@@ -82,3 +82,5 @@ FIREBASE_MEASUREMENT_ID=tu_measurement_id
 - El plugin se carga automáticamente al iniciar la aplicación
 
 
+
+

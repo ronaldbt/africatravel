@@ -8,8 +8,9 @@
       <div class="relative h-[50vh] mb-16 overflow-hidden rounded-lg">
         <img 
           :src="tipoViaje.image" 
-          :alt="tipoViaje.name"
+          :alt="`${tipoViaje.name} en África - ${tipoViaje.description}`"
           class="w-full h-full object-cover"
+          loading="lazy"
         />
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
         <div class="absolute bottom-0 left-0 right-0 p-12">
@@ -279,7 +280,7 @@ const tiposViaje = {
         name: 'Sudáfrica',
         slug: 'sudafrica',
         highlight: 'Kruger + Garden Route',
-        image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=300&auto=format&fit=crop'
+        image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=300&auto=format&fit=crop'
       },
       {
         name: 'Kenia',
@@ -567,7 +568,7 @@ const tiposViaje = {
         name: 'Sudáfrica',
         slug: 'sudafrica',
         highlight: 'Kruger + Winelands + Garden Route',
-        image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=300&auto=format&fit=crop'
+        image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=300&auto=format&fit=crop'
       }
     ]
   }
@@ -617,14 +618,35 @@ const breadcrumbItems = computed(() => [
   { label: tipoViaje.name }
 ])
 
+const currentUrl = computed(() => `https://anasaviajes.com/tipo-viaje/${tipoViaje.slug}`)
+const imageUrl = computed(() => tipoViaje.image.startsWith('http') ? tipoViaje.image : `https://anasaviajes.com${tipoViaje.image}`)
+
 useHead({
-  title: `${tipoViaje.name} | Safaris por Duración | Anasa Viajes`,
+  title: `${tipoViaje.name} | ${tipoViaje.price} | Safaris por Duración | Anasa Viajes`,
   meta: [
-    { name: 'description', content: `${tipoViaje.description} ${tipoViaje.price} para ${tipoViaje.destinations} destinos en África.` },
-    { name: 'keywords', content: `${tipoViaje.name.toLowerCase()}, ${tipoViaje.duration}, safari ${tipoViaje.destinations} destinos, ${tipoViaje.price.toLowerCase()}` }
+    { 
+      name: 'description', 
+      content: `${tipoViaje.name}: ${tipoViaje.description} Precio desde ${tipoViaje.price} para ${tipoViaje.destinations} destinos. Duración: ${tipoViaje.duration}. Mejor época: ${tipoViaje.bestTime}. Itinerario completo incluido.` 
+    },
+    { 
+      name: 'keywords', 
+      content: `${tipoViaje.name.toLowerCase()}, ${tipoViaje.duration}, safari ${tipoViaje.destinations} destinos, ${tipoViaje.price.toLowerCase()}, itinerario safari, safari personalizado` 
+    },
+    { property: 'og:title', content: `${tipoViaje.name} | Anasa Viajes` },
+    { property: 'og:description', content: `${tipoViaje.description} ${tipoViaje.price}` },
+    { property: 'og:image', content: imageUrl.value },
+    { property: 'og:url', content: currentUrl.value },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: `${tipoViaje.name} | Anasa Viajes` },
+    { name: 'twitter:description', content: tipoViaje.description },
+    { name: 'twitter:image', content: imageUrl.value }
   ],
   link: [
-    { rel: 'canonical', href: `https://anasaviajes.com/tipo-viaje/${tipoViaje.slug}` }
+    { rel: 'canonical', href: currentUrl.value },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl.value },
+    { rel: 'alternate', hreflang: 'en', href: `https://anasaviajes.com/en/tipo-viaje/${tipoViaje.slug}` },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl.value }
   ]
 })
 </script>

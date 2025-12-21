@@ -22,8 +22,9 @@
           <div class="aspect-[16/9] overflow-hidden">
             <img 
               :src="post.image" 
-              :alt="post.title"
+              :alt="`${post.title} - Blog Anasa Viajes`"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              loading="lazy"
             />
           </div>
           <div class="p-8">
@@ -48,14 +49,32 @@
 </template>
 
 <script setup>
+const currentUrl = 'https://anasaviajes.com/blog'
+
 useHead({
-  title: 'Blog de Viajes | Anasa Viajes',
+  title: 'Blog de Safaris en África | Consejos, Guías y Experiencias | Anasa Viajes',
   meta: [
-    { name: 'description', content: 'Blog sobre safaris en África, consejos de viaje, conservación y experiencias únicas. Historias y guías para planificar tu safari perfecto.' },
-    { name: 'keywords', content: 'blog safari áfrica, consejos safari, guías viaje áfrica, conservación áfrica' }
+    { 
+      name: 'description', 
+      content: 'Descubre todo sobre safaris en África: consejos de viaje, mejores épocas, qué llevar, guías de destinos, conservación y experiencias únicas. Todo lo que necesitas para planificar tu safari perfecto.' 
+    },
+    { 
+      name: 'keywords', 
+      content: 'blog safari áfrica, consejos safari, guías viaje áfrica, conservación áfrica, mejor época safari, qué llevar safari, gran migración, big five' 
+    },
+    { property: 'og:title', content: 'Blog de Safaris en África | Anasa Viajes' },
+    { property: 'og:description', content: 'Consejos, guías y experiencias sobre safaris en África. Todo lo que necesitas para planificar tu safari perfecto.' },
+    { property: 'og:url', content: currentUrl },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Blog de Safaris en África | Anasa Viajes' },
+    { name: 'twitter:description', content: 'Consejos, guías y experiencias sobre safaris en África' }
   ],
   link: [
-    { rel: 'canonical', href: 'https://anasaviajes.com/blog' }
+    { rel: 'canonical', href: currentUrl },
+    { rel: 'alternate', hreflang: 'es', href: currentUrl },
+    { rel: 'alternate', hreflang: 'en', href: 'https://anasaviajes.com/en/blog' },
+    { rel: 'alternate', hreflang: 'x-default', href: currentUrl }
   ]
 })
 
@@ -83,5 +102,6 @@ const posts = [
   }
 ]
 </script>
+
 
 
